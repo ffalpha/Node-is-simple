@@ -11,7 +11,7 @@ mongoose
     useFindAndModify: false,
   })
   .then(() => {
-    console.log(chalk.yellow("[!] Successfully connected to the database"));
+    console.log(chalk.green("[!] Successfully connected to the database"));
   })
   .catch((err) => {
     console.log(chalk.red(err.message));
