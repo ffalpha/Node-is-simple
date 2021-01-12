@@ -1,3 +1,4 @@
-./server.cert
-./server.key
 
+
+config/server.cert
+config/server.key
