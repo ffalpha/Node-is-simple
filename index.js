@@ -10,8 +10,10 @@ const SERVER_CERT = config.SERVER_CERT;
 const SERVER_KEY = config.SERVER_KEY;
 
 const app = express();
+const Middleware = require("./middleware");
 const MainController = require("./controllers");
 
+Middleware(app);
 app.use("", MainController);
 app.set("port", HTTPS_PORT);
 
